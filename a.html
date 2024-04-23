@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #000000; /* Black background */
+            background-image: url('https://source.unsplash.com/featured/?anime');
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #fff; /* Text color */
+            margin: 0;
+            padding: 0;
+            overflow-y: auto; /* Enable vertical scrolling */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black navbar background */
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .navbar-brand {
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffc107;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto; /* Increased top margin */
+            background-color: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            color: #ffffff; /* Text color */
+        }
+
+        .card {
+            background-color: #fff; /* White card background */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+            color: #000; /* Text color */
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-subtitle {
+            font-size: 14px;
+            color: #6c757d; /* Gray color */
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .btn-group {
+            display: flex;
+        }
+
+        .btn {
+            margin-right: 10px;
+        }
+
+        .event-details-title {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            border-radius: 10px;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #fff; /* Text color */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Black navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Event Bliss</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-action" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="new.html">Create Event</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="a.html">Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Search bar -->
+        <div class="input-group mb-3">
+            <input type="text" id="searchInput" class="form-control" placeholder="Search events...">
+        </div>
+
+
+
+
+
+
+
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">New Year's Eve Party</h4>
+                <div class="card-subtitle text-muted mb-2">Place: Bihar</div>
+                <div class="card-text">Ring in the New Year with a bang! Join us for an unforgettable night of music, dance, and celebration in the heart of Bihar. Get ready to create memories that will last a lifetime!</div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-primary">Read More</a>
+                    <a href="#" class="btn btn-info">Edit</a>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Ranchi Music Festival</h4>
+                <div class="card-subtitle text-muted mb-2">Place: Ranchi</div>
+                <div class="card-text">Calling all music lovers! Experience the magic of live performances by renowned artists at the Ranchi Music Festival. From soulful melodies to high-energy beats, this event promises to captivate your senses.</div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-primary">Read More</a>
+                    <a href="#" class="btn btn-info">Edit</a>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Repeat the above structure for the remaining events -->
+        
+        <!-- Haryana Food Festival -->
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Haryana Food Festival</h4>
+                <div class="card-subtitle text-muted mb-2">Place: Haryana</div>
+                <div class="card-text">Indulge your taste buds at the Haryana Food Festival! Explore a delectable array of local cuisines, from savory street snacks to mouthwatering traditional dishes. Prepare for a culinary journey like no other.</div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-primary">Read More</a>
+                    <a href="#" class="btn btn-info">Edit</a>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Cultural Extravaganza in Phagwara -->
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Cultural Extravaganza in Phagwara</h4>
+                <div class="card-subtitle text-muted mb-2">Place: Phagwara</div>
+                <div class="card-text">Immerse yourself in the vibrant culture of Phagwara! Witness colorful performances, traditional dances, and captivating art displays. Celebrate diversity and unity through the beauty of culture.</div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-primary">Read More</a>
+                    <a href="#" class="btn btn-info">Edit</a>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Ashu's Birthday Bash -->
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Ashu's Birthday Bash</h4>
+                <div class="card-subtitle text-muted mb-2">Place: Veena</div>
+                <div class="card-text">Join us in celebrating Ashu's special day with a birthday bash like no other! Get ready for games, laughter, and plenty of surprises as we make this day unforgettable for Ashu and everyone in attendance.</div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-primary">Read More</a>
+                    <a href="#" class="btn btn-info">Edit</a>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Vanshika's Graduation Ceremony -->
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Vanshika's Graduation Ceremony</h4>
+                <div class="card-subtitle text-muted mb-2">Place: Vanshika</div>
+                <div class="card-text">Let's commemorate Vanshika's academic achievements with a grand graduation ceremony! Join us as we applaud her hard work and dedication, and wish her success in all her future endeavors.</div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-primary">Read More</a>
+                    <a href="#" class="btn btn-info">Edit</a>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Vanshu's Farewell Party -->
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Vanshu's Farewell Party</h4>
+                <div class="card-subtitle text-muted mb-2">Place: Vanshu</div>
+                <div class="card-text">Bid farewell to Vanshu with love and laughter! Join us for an evening of heartfelt goodbyes, nostalgic memories, and best wishes for Vanshu's next chapter in life.</div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-primary">Read More</a>
+                    <a href="#" class="btn btn-info">Edit</a>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+        
+        
+
+         <!-- Event details -->
+    <!-- <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Event 1</h4>
+            <div class="card-subtitle text-muted mb-2">Date: April 30, 2024</div>
+            <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida nulla
+                at aliquam.</div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">Read More</a>
+                <a href="#" class="btn btn-info">Edit</a>
+                <button type="button" class="btn btn-danger">Delete</button>
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+        <!-- Loop through articles to display event details -->
+        <!-- <% articles.forEach(article=>{%>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title"><%=article.title%></h4>
+                <div class="card-subtitle text-muted mb-2"><%=article.createdAt.toLocaleDateString() %></div>
+                <div class="card-text"><%=article.description%></div>
+                <div class="btn-group">
+                    <a href="articles/<%=article.slug%>" class="btn btn-primary">Read More</a>
+                    <a href="articles/edit/<%= article.id%>" class="btn btn-info">Edit</a>
+                    <form action="/articles/<%=article.id %>?_method=DELETE" method="POST" class="d-inline">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <%})%>
+    </div> -->
+
+    <!-- JavaScript code for filtering event details -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const searchInput = document.getElementById('searchInput');
+
+            searchInput.addEventListener('input', function () {
+                const searchValue = this.value.trim().toLowerCase();
+                const cards = document.querySelectorAll('.card');
+
+                cards.forEach(card => {
+                    const title = card.querySelector('.card-title').textContent.toLowerCase();
+                    if (title.includes(searchValue)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-WNDG5FDQ3jhqyQP2HQbSLWvaTZAl4WzVm2i0rVQa0jvV2uKdFqKo+chBk8oMpeOY"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-lB9U4F3MbqwAZz0w5yFBrw95FU10O7VZ4Lz7ROANd2DcfqO2grW7sD0qdbS/Nt9V"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
