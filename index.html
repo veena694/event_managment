@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            /* Remove solid background color */
+            background-image: url('https://source.unsplash.com/featured/?anime');
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #fff; /* Text color */
+            margin: 0;
+            padding: 0;
+            overflow-y: auto; /* Enable vertical scrolling */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+        }
+
+        .navbar-brand {
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffc107;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px; /* Add padding */
+        }
+
+        .welcome-box {
+            background-color: rgba(0, 0, 0, 0.9); /* Darker opacity */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            color: #ffffff; /* Text color */
+            text-align: center; /* Center align text */
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px; /* Adjust margin */
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: #4facfe; /* Blue color */
+            border: none;
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+        }
+
+        .btn-secondary {
+            background-color: #e55d87; /* Pink color */
+            border: none;
+            color: #ffffff;
+        }
+
+        .btn-secondary:hover {
+            transform: scale(1.05);
+        }
+
+        /* Customizing login button */
+        .login-btn {
+            background-color: #ffc107; /* Yellow */
+            border: none;
+            color: #000000; /* Black */
+        }
+
+        .login-btn:hover {
+            background-color: #ffae42; /* Lighter shade of yellow on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Transparent navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Event Bliss</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <!-- Customized login button -->
+                        <a class="nav-link login-btn" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="welcome-box">
+            <h1>Welcome to Event Bliss</h1>
+            <p>Your go-to destination for unforgettable events</p>
+            <div class="btn-group">
+                <a class="btn btn-primary" href="welcome.html">User</a>
+                <a class="btn btn-secondary" href="adminwel.html">Vendor</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-WNDG5FDQ3jhqyQP2HQbSLWvaTZAl4WzVm2i0rVQa0jvV2uKdFqKo+chBk8oMpeOY"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-lB9U4F3MbqwAZz0w5yFBrw95FU10O7VZ4Lz7ROANd2DcfqO2grW7sD0qdbS/Nt9V"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
