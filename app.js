@@ -46,7 +46,7 @@ app.post("/loggedin", encoded, async (req, res) => {
 });
 
 app.get("/dashboard", (req, res) => {
-  res.send("Welcome User");
+  res.redirect("http://127.0.0.1:5500/index.html");
 });
 
 app.listen(8080, () => {
